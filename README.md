@@ -1,5 +1,5 @@
 # Antony_Jones_Assignment4
-Student Enrollment List
+### Student Enrollment List
 
 ## Situation
 You work for a College as their Data Scientist and your job is to help the Professors manage the data that they receive from the College. For this assignment you need to help the Professors of 3 different classes with their student enrollment list. 
