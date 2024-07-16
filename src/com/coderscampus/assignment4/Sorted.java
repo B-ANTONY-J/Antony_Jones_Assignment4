@@ -1,4 +1,4 @@
-package com.coderscampus.assignmen4.sort;
+package com.coderscampus.assignment4;
 
 public class Sorted implements Comparable<Sorted> {
     private String id;
@@ -13,25 +13,16 @@ public class Sorted implements Comparable<Sorted> {
         this.grade = grade;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public String getCourse() {
         return course;
     }
 
-    public int getGrade() {
-        return grade;
-    }
-
     @Override
     public int compareTo(Sorted other) {
-        return Integer.compare(other.grade, this.grade); // Sort in descending order
+        if (other == null) {
+            return -1; // nulls are considered less than non-null values
+        }
+        return Integer.compare(other.grade, this.grade); // Descending order
     }
 
     @Override
